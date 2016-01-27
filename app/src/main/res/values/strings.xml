@@ -1,0 +1,114 @@
+<resources>
+    <!-- labels gerais-->
+    <string name="app_name">Babette Unhas</string>
+    <string name="aguarde">Por favor aguarde ...</string>
+    <string name="usuario">Nome de Usuário</string>
+
+
+    <string name="facebookSignIn">Entrar com Facebook</string>
+
+    <!-- Google Play Services-->
+    <string name="location_error">Nao foi possivel obter sua localizacao. O aplicativo tentará novamente...</string>
+    <string name="nenhum_local">Nenhum local encontrado próximo a você</string>
+    <string name="erro_google_play">Problemas na comunicação com o Google Play Services. Verifique sua conexao internet</string>
+    <string name="endereco">Escolha o endereco mais proximo de voce</string>
+    <string name="plus_generic_error">Sign in with Google is not available.</string>
+    <!--
+The server client ID to which offline access will be granted, if set.
+This value should match the id of a service account configured on your developer
+console project. For more information on configuring your app for offline access,
+see:
+
+https://developers.google.com/+/web/signin/server-side-flow
+
+Also:
+
+https://developers.google.com/+/mobile/android/sign-in#enable_server-side_api_access_for_your_app
+
+-->
+    <string name="server_client_id"></string>
+
+    <!-- tela perfil do usuario -->
+    <string name="name">Nome de usuário: </string>
+    <string name="data_nascimento">Data de Nascimento: </string>
+    <string name="num">Número: </string>
+    <string name="rua">Rua: </string>
+    <string name="complemento">Complemento: </string>
+    <string name="estado">Estado: </string>
+    <string name="cidade">Cidade: </string>
+    <string name="bairro">Bairro: </string>
+    <string name="cep">CEP: </string>
+    <string name="email">E-mail: </string>
+
+    <!-- tela confirmacao do agendamento -->
+    <string name="tituloConfirmacao">Deseja confirmar seu agendamento ? </string>
+    <string name="servico">Serviço: </string>
+    <string name="horario">Horário: </string>
+
+    <!-- tela agendamento-->
+    <string name="titulo_horarios">Horários Disponíveis</string>
+
+    <string name="facebook_app_id">1430168373979312</string>
+    <string name="facebook_msg_sucesso">Usuário logado com sucesso</string>
+
+
+    <string name="botao_buscar">Buscar</string>
+
+    <!-- quiz -->
+    <string name="pergunta1">Onde você deseja fazer as unhas ?</string>
+    <string name="casa">em casa</string>
+    <string name="trabalho">perto do trabalho</string>
+    <string name="salao">adoro ir ao salão !</string>
+
+    <string name="pergunta2">Como você está hoje ?</string>
+    <string name="sofisticada">Sofisticada</string>
+    <string name="criativa">Criativa</string>
+    <string name="divertida">Divertida</string>
+    <string name="baladeira">Baladeira</string>
+    <string name="romantica">Romântica</string>
+    <string name="classica">Clássica</string>
+    <string name="aceito">Aceito Sugestões</string>
+
+    <string name="pergunta3">Você precisa fazer :</string>
+    <string name="pe">pé</string>
+    <string name="mao">mão</string>
+    <string name="pe_e_mao">pé e mão</string>
+
+    <string name="pergunta4">Você prefere... </string>
+    <string name="mesma">mesma profissional</string>
+    <string name="diferentes">profisionais diferentes</string>
+
+    <!-- navigation drawer-->
+    <string name="action_settings">Configuracoes</string>
+    <string name="drawer_open">Menu Lateral Aberto</string>
+    <string name="drawer_close">Menu Lateral Fechado</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_quiz">QuizActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- titulos toolbar -->
+    <string name="title_section0">Perfil do Usuário</string>
+    <string name="title_section1">Favoritos</string>
+    <string name="title_section2">Buscar Profissionais</string>
+    <string name="title_section3">Dicas e Tendências</string>
+    <string name="title_section4">Promoções</string>
+    <string name="title_section5">Blog da Babette</string>
+    <string name="title_section6">Fale Conosco</string>
+
+    <string name="nome_empresa">OLIVERSYS - Soluções Mobile</string>
+
+    <string name="hello_world">Hello world!</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_example">example</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="action_example">Example action</string>
+    <string name="title_activity_agendamento">AgendamentoActivity</string>
+    <string name="title_activity_promocoes">PromocoesActivity</string>
+    <string name="title_activity_estabelecimentos">EstabelecimentosActivity</string>
+    <string name="title_activity_funcionarios">FuncionariosActivity</string>
+
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="100px"
+    android:layout_gravity="center">
+
+    <!--<TextView-->
+    <!--android:paddingTop="20px"-->
+    <!--android:paddingLeft="20px"-->
+    <!--android:id="@+id/enunciado"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textSize="20sp"-->
+    <!--android:text="Onde voce deseja fazer as unhas ?"/>-->
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/enunciado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"/>
+
+    <RadioGroup
+        android:paddingTop="20px"
+        android:paddingLeft="140px"
+        android:layout_below="@+id/enunciado"
+        android:id="@+id/radioGroupRespostas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <!--<RadioButton-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="perto do trabalho"/>-->
+
+    </RadioGroup>
+</RelativeLayout>

@@ -1,0 +1,190 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.oliversys.babetteunhas.CadastrarPerfilUsuarioActivity">
+
+    <TableLayout
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical" >
+
+        <TableRow>
+            <TextView
+                android:id="@+id/label_nome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="@string/name"
+                android:textStyle="bold"
+                android:paddingBottom="10px"/>
+
+            <EditText
+                android:id="@+id/name"
+                android:inputType="textPersonName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10px"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/label_data_nascimento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/data_nascimento"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingBottom="10px"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:ems="10"
+                android:id="@+id/data_nascimento"
+                android:layout_column="1"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/label_rua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="@string/rua"
+                android:paddingBottom="10px" />
+
+            <EditText
+                android:id="@+id/rua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/label_num_rua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="@string/num"
+                android:paddingBottom="10px" />
+
+            <EditText
+                android:id="@+id/num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="8"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/label_complemento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="@string/complemento"
+                android:paddingBottom="10px" />
+
+            <EditText
+                android:id="@+id/compl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text|number"
+                android:maxLength="10"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/label_bairro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="@string/bairro"
+                android:paddingBottom="10px" />
+
+            <EditText
+                android:id="@+id/bairro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text|number"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/label_cep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="@string/cep"
+                android:paddingBottom="10px" />
+
+            <EditText
+                android:id="@+id/cep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPostalAddress|textNoSuggestions"
+                android:maxLength="9"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/label_estado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="@string/estado"
+                android:paddingBottom="10px" />
+            <Spinner
+                android:id="@+id/estado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:dropDownWidth="5dp"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/label_cidade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="@string/cidade"
+                android:paddingBottom="10px" />
+            <Spinner
+                android:id="@+id/cidade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:dropDownWidth="15dp"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/label_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="@string/email"
+                android:paddingBottom="10px" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/email"
+                android:layout_column="1" />
+        </TableRow>
+        <TableRow android:paddingTop="30dp"
+            android:gravity="center_horizontal">
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/cadastrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cadastrar" />
+        </TableRow>
+    </TableLayout>
+
+</FrameLayout>

@@ -1,0 +1,43 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical"
+    android:id="@+id/drawer_layout" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_content"/>
+
+    <!-- inflado sob demanda, quando acionado pela activity -->
+    <!--<ViewStub-->
+        <!--android:id="@+id/stub_agendamento"-->
+        <!--android:inflatedId="@+id/tela_agendamento"-->
+        <!--android:layout="@layout/activity_agendamento"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+    <!--<ViewStub-->
+        <!--android:id="@+id/stub_estab"-->
+        <!--android:inflatedId="@+id/tela_estab"-->
+        <!--android:layout="@layout/activity_estabelecimentos"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+    <fragment
+        android:id="@+id/fragment_nav_drawer"
+        android:name="br.com.oliversys.babettenosalao.fragments.NavigationDrawerFragment"
+        tools:layout="@layout/fragment_nav_drawer"
+        android:layout_width="match_parent" android:layout_height="match_parent" />
+
+</android.support.v4.widget.DrawerLayout>

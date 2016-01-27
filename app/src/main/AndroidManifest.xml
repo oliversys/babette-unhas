@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="babette.oliversys.com.br.babettenosalao" >
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--
+     To retrieve OAuth 2.0 tokens or invalidate tokens to disconnect a user. This disconnect
+     option is required to comply with the Google+ Sign-In developer policies
+    -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+
+    <application
+        android:name="br.com.oliversys.mobilecommons.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/babette_icon_small"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:replace="android:name" >
+        <service
+            android:name="br.com.oliversys.babettenosalao.FetchAddressIntentService"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="br.com.oliversys.babettenosalao.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="br.com.oliversys.babettenosalao.GoogleServicesAPIActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.oliversys.babettenosalao.MainActivity" />
+        </activity>
+        <activity android:name="br.com.oliversys.babettenosalao.CadastrarPerfilUsuarioActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.oliversys.babettenosalao.GoogleServicesAPIActivity" />
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="br.com.oliversys.babettenosalao.Main2Activity"
+            android:label="@string/title_activity_main2" >
+        </activity>
+        <activity
+            android:name="br.com.oliversys.babettenosalao.AgendamentoActivity"
+            android:label="@string/title_activity_agendamento"
+            android:parentActivityName="br.com.oliversys.babettenosalao.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.oliversys.babettenosalao.MainActivity" />
+        </activity>
+        <activity
+            android:name="br.com.oliversys.babettenosalao.PromocoesActivity"
+            android:label="@string/title_activity_promocoes"
+            android:parentActivityName="br.com.oliversys.babettenosalao.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.oliversys.babettenosalao.MainActivity" />
+        </activity>
+        <activity
+            android:name="br.com.oliversys.babettenosalao.QuizActivity"
+            android:label="@string/title_activity_quiz"
+            android:parentActivityName="br.com.oliversys.babettenosalao.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.oliversys.babettenosalao.MainActivity" />
+        </activity>
+        <activity
+            android:name="br.com.oliversys.babettenosalao.EstabelecimentosActivity"
+            android:label="@string/title_activity_estabelecimentos"
+            android:parentActivityName="br.com.oliversys.babettenosalao.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.oliversys.babettenosalao.MainActivity" />
+        </activity>
+        <activity
+            android:name="br.com.oliversys.babettenosalao.FuncionariosActivity"
+            android:label="@string/title_activity_funcionarios"
+            android:parentActivityName="br.com.oliversys.babettenosalao.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.oliversys.babettenosalao.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
